@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.ilearnspace'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.swinglabs:swingx:1.6.5'
+    implementation 'mysql:mysql-connector-java:8.0.26'
+}
+
+application {
+    mainClassName = 'com.ilearnspace.Main'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
